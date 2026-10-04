@@ -1,0 +1,14 @@
+{
+  "name": "greeter",
+  "type": "service",
+  "version": "0.1.0",
+  "language": "Go",
+  "buildpack": "docker",
+  "appPath": "greeter",
+  "entrypoint": "deployment/service",
+  "exposure": "internet",
+  "dependencies": [],
+  "description": "Stateless HTTP service exposing GET /hello?name=X, returning a JSON greeting for the given name or a default greeting when name is omitted or empty. Follows the app-factory-kaj/e2e-reference Go conventions (cmd/greeter entrypoint, internal/ packages, JSON error shape, PORT env var). Holds no data, requires no sign-in, and exposes no other endpoints.",
+  "stories": [1, 2],
+  "skillsPinned": ["openapi-conventions", "go"]
+}
